@@ -16,7 +16,7 @@ RUN  echo 'http://mirrors.ustc.edu.cn/alpine/edge/main' > /etc/apk/repositories 
 		ca-certificates \
 		curl \
 		tar \
-		xz 
+		xz
 
 # ensure www-data user exists
 RUN set -x \
@@ -167,7 +167,7 @@ RUN set -ex \
 		echo '[www]'; \
 		echo 'listen = [::]:9000'; \
 	} | tee php-fpm.d/zz-docker.conf
-77d
+
 COPY rootfs /
 EXPOSE 9000
 CMD ["php-fpm"]
