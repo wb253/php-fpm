@@ -1,4 +1,4 @@
-FROM 192.168.1.3:5000/tongiot/base_supervisor
+FROM wb253/base_supervisor
 # persistent / runtime deps
 ENV PHPIZE_DEPS \
 		autoconf \
